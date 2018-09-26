@@ -89,8 +89,17 @@ public class Colosseum {
      * <p>
      * Implement this function.
      */
-    public static void printWhoIsAhead() {
-        System.out.println("Implement me!");
+    /**
+     *
+     * @param a first pokemon
+     * @param b second pokemon
+     */
+    public static void printWhoIsAhead(final Pokemon a, final Pokemon b) {
+        if (a.hitPoints > b.hitPoints) {
+            System.out.println(a.name + " is currently ahead");
+        } else {
+            System.out.println(b.name + " is currently ahead");
+        }
     }
 
     /**
